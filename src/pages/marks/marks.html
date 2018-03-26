@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Marks
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content id="page4">
+  <form id="marks-form2">
+    <ion-item id="marks-select1" style="background-image:url('assets/img/m11.jpg');height:100%;width:100%;">
+      <ion-label>
+        Select
+      </ion-label>
+      <ion-select name="exam"
+      (ionChange)="getMarks()"
+      [(ngModel)]="exam">
+        <ion-option value='15'>
+          Task - 1
+        </ion-option>
+        <ion-option value='16'>
+          MSE - 1
+        </ion-option>
+        <ion-option value='17'>
+          Task - 2
+        </ion-option>
+        <ion-option value='18'>
+          MSE - 2
+        </ion-option>
+      </ion-select>
+    </ion-item>
+  </form>
+  <br>
+
+<ion-card *ngFor='let m of marks'>
+  <ion-card-header [ngClass]="m[1]<10 && (exam == 16 || exam == 18)?  'card-hheader' : 'card-header' "style="text-transformation:uppercase;"  >
+    {{m[0]}}
+  </ion-card-header>
+  <ion-card-content style="">
+  
+    <ion-grid style="">
+	
+      <ion-row style="">
+    
+   
+    <ion-col col-9 class="none" >
+      marks
+    </ion-col>
+     <ion-col col-3 class="none" >
+      {{m[1]}}
+    </ion-col>
+    </ion-row>
+   
+  
+     
+  
+  </ion-grid>
+  </ion-card-content>
+</ion-card>
+<br>
+
+</ion-content>
+<div padding style="background-image:url('assets/img/m11.jpg');height:100%;width:100%;position:fixed"> 
+
+
+</div> 

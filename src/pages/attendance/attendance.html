@@ -1,0 +1,193 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Attendance
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content id="page3">
+  <form id="attendance-form3">
+    <ion-item id="attendance-select2" style="background-image:url('assets/img/m11.jpg');height:100%;width:100%;">
+       
+      <ion-label >
+        Semister
+      </ion-label>
+      <ion-select name="attandanceChoice"
+      (ionChange)=  "getSemester()"
+      [(ngModel)]="attandanceChoice">
+        <ion-option value="1">
+          1 Sem
+        </ion-option>
+        <ion-option value="2">
+          2 Sem
+        </ion-option>
+        <ion-option value="3">
+          3 Sem
+        </ion-option>
+        <ion-option value="4">
+          4 Sem
+        </ion-option>
+        <ion-option value="5">
+          5 Sem
+        </ion-option>
+        <ion-option value="6">
+          6 Sem
+        </ion-option>
+        <ion-option value="7">
+          7 Sem
+        </ion-option>
+        <ion-option value="8">
+          8 Sem
+        </ion-option>
+      </ion-select>
+    </ion-item>
+  </form>
+<!-- <ion-card >
+  <ion-card-header class="card-header"style="text-transformation:uppercase;"  >
+    Java programming
+  </ion-card-header>
+  <ion-card-content style="">
+  
+    <ion-grid style="">
+	
+      <ion-row style="">
+    
+   
+    <ion-col col-9 class="none" >
+      classes taken
+    </ion-col>
+     <ion-col col-3 class="none" >
+      36
+    </ion-col>
+    </ion-row>
+    <ion-row style="">
+    <ion-col col-9 class="none">
+      classes attended
+    </ion-col>
+     <ion-col col-3 class="none" >
+      16
+    </ion-col>
+    </ion-row>
+  
+      <ion-row style=" border-top:1px solid black">
+     <ion-col  col-9 class="none" >
+      percentage
+    </ion-col>
+     <ion-col col-3 class="none" >
+      56%
+    </ion-col>
+    </ion-row>
+  
+  </ion-grid>
+  </ion-card-content>
+</ion-card>
+<br>
+
+<ion-card >
+  <ion-card-header class="card-hheader"style="text-transformation:uppercase;"  >
+    Java programming
+  </ion-card-header>
+  <ion-card-content style="">
+  
+    <ion-grid style="">
+	
+      <ion-row style="">
+    
+   
+    <ion-col col-9 class="none" >
+      classes taken
+    </ion-col>
+     <ion-col col-3 class="none" >
+      36
+    </ion-col>
+    </ion-row>
+    <ion-row style="">
+    <ion-col col-9 class="none">
+      classes attended
+    </ion-col>
+     <ion-col col-3 class="none" >
+      16
+    </ion-col>
+    </ion-row>
+  
+      <ion-row style=" border-top:1px solid black">
+     <ion-col  col-9 class="none" >
+      percentage
+    </ion-col>
+     <ion-col col-3 class="none" >
+      56%
+    </ion-col>
+    </ion-row>
+  
+  </ion-grid>
+  </ion-card-content>
+</ion-card>
+<br> -->
+<ion-card *ngFor="let a of attendence">
+  <ion-card-header [ngClass]="a[3]>75?  'card-header' : 'card-hheader' "style="text-transformation:uppercase;"  >
+    {{a[0]}}
+  </ion-card-header>
+  <ion-card-content style="">
+  
+    <ion-grid style="">
+	
+      <ion-row style="">
+    
+   
+    <ion-col col-9 class="none" >
+      classes taken
+    </ion-col>
+     <ion-col col-3 class="none" >
+      {{a[2]}}
+    </ion-col>
+    </ion-row>
+    <ion-row style="">
+    <ion-col col-9 class="none">
+      classes attended
+    </ion-col>
+     <ion-col col-3 class="none" >
+      {{a[1]}}
+    </ion-col>
+    </ion-row>
+  
+      <ion-row style=" border-top:1px solid black">
+     <ion-col  col-9 class="none" >
+      percentage
+    </ion-col>
+     <ion-col col-3 class="none" >
+      {{a[3]}}%
+    </ion-col>
+    </ion-row>
+  
+  </ion-grid>
+  </ion-card-content>
+</ion-card>
+  <!-- <ion-card id="marks-card24" *ngFor="let a of attendence">
+    <ion-list>
+      <ion-item id="marks-list-item-container6">
+        <div id="marks-markdown6" class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;">
+            <strong>
+              {{a[0]}}
+            </strong>
+          </p>
+        </div>
+        <div id="marks-markdown7" class="show-list-numbers-and-dots">
+          <p style="color:#000000;">
+            Total Present: {{a[1]}}
+          </p>
+          <p style="color:#000000;">
+            Total Periods: {{a[2]}}
+          </p>
+          <p style="color:#000000;">
+            Percentage: {{a[3]}}
+          </p>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-card> -->
+</ion-content>
+<div padding style="background-image:url('assets/img/m11.jpg');height:100%;width:100%;position:fixed"> 
+
+
+</div> 

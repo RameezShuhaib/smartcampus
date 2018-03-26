@@ -1,0 +1,92 @@
+<ion-header>
+      <link href="https://fonts.googleapis.com/css?family=Bitter|Noto+Sans" rel="stylesheet">
+
+  <ion-navbar>
+   
+    <ion-title style="color:#eeeeee;">
+      Profile
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content id="content" >
+  <div id="profile-background" padding >
+      
+    <div id="profilepic" >
+	          <img src="assets/img/hBwVVmLuQtSkiJCRwBUN_AAEAAQAAAAAAAAcvAAAAJDNjZjI1MTg3LTBlODYtNDI5ZS1iN2ZiLWZiZjEzYjgxY2EzMg.jpg">
+
+    </div>
+  <h1 class="pro-heading">
+        
+    </h1>
+    <h3 class="pro-heading" >
+      {{usn}}
+    </h3>
+  </div>
+<br>
+   <ion-list id="profile-list2">
+    <!-- <ion-item *ngFor="let p of profile" id="profile-list-item-container9">
+      <div id="profile-markdown13" class="show-list-numbers-and-dots">
+        <p style="margin-top:0px;color:#000000;">
+          <strong>
+            {{p[0]+' : '}}
+          </strong>
+            {{p[1]}}
+        </p>
+
+      </div>
+    </ion-item>  -->
+     <ion-card >
+    <ion-card-header class="card-header"style="text-transformation:uppercase;"  >
+    Basic information
+  </ion-card-header>
+  <ion-card-content>
+  
+    <ion-grid style="">
+	
+      <ion-row style="">
+    
+   
+    <ion-col col-5 class="none" >
+      name
+    </ion-col>
+     <ion-col col-7 class="none" >
+      {{name}}
+    </ion-col>
+    </ion-row>
+    <ion-row style="">
+    <ion-col col-5 class="none">
+     usn
+    </ion-col>
+     <ion-col col-7 class="none" >
+     {{usn}}
+    </ion-col>
+    </ion-row>
+  
+      <!-- <ion-row >
+     <ion-col  col-5 class="none" >
+      branch
+    </ion-col>
+     <ion-col col-7 class="none" >
+      information science
+    </ion-col>
+    </ion-row> -->
+  
+  </ion-grid>
+  </ion-card-content>
+</ion-card>
+     <ion-item *ngFor="let p of profile" id="profile-list-item-container10">
+      <div id="profile-markdown14" class="show-list-numbers-and-dots">
+        <p style="margin-top:0px;color:#000000;">
+          <strong>
+            {{p[0]+' : '}}
+          </strong>
+            {{p[1]}}
+        </p>
+      </div>
+    </ion-item> 
+  </ion-list>
+</ion-content>
+ <div padding style="background-image:url('assets/img/m111.jpg');height:auto;width:100%;position:fixed"> 
+
+
+</div> 
