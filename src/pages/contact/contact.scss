@@ -1,3 +1,14 @@
 page-contact {
-
+$default: #006db3;
+.toolbar-background {
+  background-color: $default;
+  color: #eeeeee;
+}
+.toolbar-title-md {
+    color: #eeeeee;
+}
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default{
+    color:#eeeeee;
+    background-color: transparent;
+}
 }

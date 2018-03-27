@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DevelopersPage } from '../developers/developers';
 import { RulesPage } from '../rules/rules';
+import { ContactPage } from '../contact/contact';
 
 
 /**
@@ -31,5 +32,10 @@ export class InfoPage {
 
    if (!params) params = {};
     this.navCtrl.push(RulesPage);
+  }
+  getcont(params){
+
+   if (!params) params = {};
+    this.navCtrl.push(ContactPage);
   }
 }

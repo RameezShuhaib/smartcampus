@@ -12,6 +12,8 @@ import { LoginPage } from '../pages/login/login';
 import { InfoPage } from '../pages/info/info';
 import { DevelopersPage } from '../pages/developers/developers';
 import { RulesPage } from '../pages/rules/rules';
+import { ContactPage } from '../pages/contact/contact';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -29,7 +31,8 @@ const pages = [
   LoginPage,
   InfoPage,
   DevelopersPage,
-  RulesPage
+  RulesPage,
+  ContactPage
 ];
 
 @NgModule({

@@ -1,27 +1,40 @@
 page-developers {
+$default: #006db3;
 .toolbar-background {
-  background:url('assets/img/m11.jpg');
+  background-color: $default;
+  color: #eeeeee;
+}
+.toolbar-title-md {
+    color: #eeeeee;
+}
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default{
+    color:#eeeeee;
+    background-color: transparent;
+}
+}
+// .toolbar-background {
+//   background:url('assets/img/m11.jpg');
   
-}
-// .toolbar-title-md {
-//     color: #eeeeee;
 // }
-// .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default{
-//     color:#eeeeee;
-//     background-color: transparent;
+// // .toolbar-title-md {
+// //     color: #eeeeee;
+// // }
+// // .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default{
+// //     color:#eeeeee;
+// //     background-color: transparent;
+// // }
 // }
-}
-img.background{
-   width: 100%;
-    height: 100%;
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
+// img.background{
+//    width: 100%;
+//     height: 100%;
+//     position: fixed;
+//     left: 0px;
+//     top: 0px;
+//     z-index: -1;
     
-}
-#example1 {
-    border: 1px solid;
-    padding: 10px;
-    box-shadow: 5px 10px 8px 10px #888888;
-}
+// }
+// #example1 {
+//     border: 1px solid;
+//     padding: 10px;
+//     box-shadow: 5px 10px 8px 10px #888888;
+// }
